@@ -1,0 +1,121 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(../img/fondoForm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor{
+    position: relative;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+    color:#ffff;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.contenedor .toggle{
+    position: absolute;
+    top: 7px;
+    right: 390px;
+    width: 100px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 25px;
+    border-top: 2px solid darkcyan;
+    border-bottom: 2px solid darkcyan;
+    transition:all .5s ease;
+    cursor: pointer;
+}
+
+.contenedor .toggle .span{
+    letter-spacing: 1px;
+}    
+
+.contenedor .toggle:hover{
+    border-top: 2px solid rgb(16, 15, 110);
+    border-bottom: 2px solid rgb(16, 15, 110);
+}
+
+.contenedor h2 {
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1px;
+}
+
+.contenedor input[type="text"],
+.contenedor input[type="password"],
+.contenedor input[type="email"],
+.contenedor input[type="tel"] {
+    outline: none;
+    background: rgba(0, 0, 0, .5);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    color: #ffff;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid darkcyan;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+    transition:all .5s ease;
+}
+
+.contenedor input[type="text"]:focus,
+.contenedor input[type="password"]:focus,
+.contenedor input[type="email"]:focus,
+.contenedor input[type="tel"]:focus {
+    border-bottom: 4px solid rgb(16, 15, 110);
+}
+
+.contenedor input[type="submit"] {
+    background: darkcyan;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:all .5s ease;
+}
+.contenedor input[type="button"] {
+    background: darkcyan;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:all .5s ease;
+}
+
+.contenedor input[type="submit"]:hover{
+    background: rgb(16, 15, 110);
+}
+
+.contenedor input[type="button"]:hover{
+    background: rgb(16, 15, 110);
+}
+.contenedor .contformulario{
+    padding: 40px;
+    display: none;
+}
+
+.contenedor .contformulario:nth-child(2){
+    display: block;
+}

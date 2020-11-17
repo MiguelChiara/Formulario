@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="Stylesheet" href="Style/style.css">
+</head>
+<body>
+    <div class="contenedor">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="contformulario">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" name="login">
+                <input type="text" id="usuarioLog" placeholder="Usuario" required>
+                <input type="password" id="contraseniaLog" placeholder="Contraseña" required>
+                <input type="button" id="inicio" value="Iniciar Sesión">
+            </form>
+        </div>
+        
+        <div class="contformulario">
+            <h2>Crea tu Cuenta</h2>
+            <form action="#" name="reg">
+                <input type="text" id="usuario" placeholder="Usuario" size="50" required>
+                <input type="password" id="contrasenia" placeholder="Contaseña" size="50" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required="required" size="50">
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" size="50">
+                <input type="email" id="mail" name="mail" placeholder="user@example.com" size="50" required="required" autofocus>
+                <input type="tel" id="telefono" name="telefono"  pattern="(\+34|0034|34)?[ -]*(8|9|6)[ -]*([0-9][ -]*){8}" maxlength="12" size="50" required="required" placeholder="teléfono">
+                <input type="button" id="registrarse" value="Registrarse">
+            </form>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.1.1.min.js"></script>    
+    <script src="Scripts/srcript.js"></script>
+</body>
+</html>
