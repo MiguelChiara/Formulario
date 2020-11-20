@@ -1,4 +1,4 @@
-(function(){
+
 	//Lanza una alerta de bienvenida
     alert("Bienvenido a tu lista de tareas online");
 
@@ -46,4 +46,3 @@
 	};
 
 	btnNuevaTarea.addEventListener("click", agregarTarea);
-}());
