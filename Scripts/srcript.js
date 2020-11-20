@@ -28,7 +28,11 @@ document.querySelector("#inicio").addEventListener("click", function () {
         if (usuario == obtenerdatos()[0] && password == obtenerdatos()[1]) {
             //Se abre en una ventana nueva para que se vea la funciona lidad del formulario
             window.open("Tareas.html", "nombre_de_la_ventana", "width=1000,height=1500");
+        }else{
+            alert("Usuario o contraseña incorrecto");
         }
+    }else{
+        alert("Introduce datos");
     }
 
 
