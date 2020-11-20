@@ -1,4 +1,4 @@
-
+//Muestra el formulario que fue ocultado con css por eso usamos la clase jquery-3.1.1.min.js
 $('.toggle').click(function () {
     $('.contformulario').animate({
         height: "toggle",
@@ -8,6 +8,7 @@ $('.toggle').click(function () {
     }, "slow");
 });
 
+//Manda los datos al log (Simula subir a una base de datos)
 document.querySelector("#registrarse").addEventListener("click", function () {
     var intput = document.getElementsByTagName("input");
     console.log(obtenerdatos()[0]);
@@ -18,7 +19,7 @@ document.querySelector("#registrarse").addEventListener("click", function () {
     console.log(obtenerdatos()[5]);
 });
 
-
+//Comprueba si el usuario y la contraseña son correctos comprobando en el vector
 document.querySelector("#inicio").addEventListener("click", function () {
     var done = 0;
     var usuario = document.login.usuarioLog.value;
@@ -32,6 +33,7 @@ document.querySelector("#inicio").addEventListener("click", function () {
 
 });
 
+//carga los datos de registro en un vector
 function obtenerdatos() {
     var datos = [];
     datos.push(document.reg.usuario.value);
