@@ -17,26 +17,30 @@ function extender() {
 document.querySelector("#registrarse").addEventListener("click", function () {
     var intput = document.getElementsByTagName("input");
     var correcto = true;
+    var res="";
     if (obtenerdatos()[0] == "") {
         correcto = false;
+        res=res+"Introduce el usuario\n ";
     }
     if (obtenerdatos()[1] == "") {
         correcto = false;
+        res=res+"Introduce una contrase\u00F1a\n ";
     }
     if (obtenerdatos()[2] == "") {
         correcto = false;
+        res=res+"Introduce el nombre\n ";
     }
     if (obtenerdatos()[3] == "") {
         correcto = false;
+        res=res+"Introduce tu email\n ";
     }
     if (obtenerdatos()[4] == "") {
         correcto = false;
-    }
-    if (obtenerdatos()[4] == "") {
-        correcto = false;
+        res=res+"Introduce tus apellidos\n ";
     }
     if (obtenerdatos()[5] == "") {
         correcto = false;
+        res=res+"Introduce tu telefono\n ";
     }
     if (correcto) {
         console.log(obtenerdatos()[0]);
@@ -48,7 +52,7 @@ document.querySelector("#registrarse").addEventListener("click", function () {
         extender();
         alert("El registro se ha efectuado con exito");
     } else {
-        alert("No se ha podido completar el registro");
+        alert(res+"No se ha podido completar el registro");
     }
 });
 
