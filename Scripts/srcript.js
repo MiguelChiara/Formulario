@@ -30,6 +30,10 @@ document.querySelector("#registrarse").addEventListener("click", function () {
         correcto = false;
         res=res+"Introduce el nombre\n";
     }
+    if(!obtenerdatos()[3].includes("@")) {
+        correcto = false;
+        res=res+"El email debe tener un @\n";
+    }
     if (obtenerdatos()[3] == "") {
         correcto = false;
         res=res+"Introduce tu email\n";
