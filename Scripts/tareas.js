@@ -1,6 +1,7 @@
 
 	//Lanza una alerta de bienvenida
-    alert("Bienvenido a tu lista de tareas online");
+	var stin = window.obtenerdatos;
+	alert("Bienvenido a tu lista de tareas online "+stin);
 
 	//Funcion selector para buscar en el html
     function $(selector) {
