@@ -13,7 +13,7 @@ function extender() {
 
 
 
-//Manda los datos al log (Simula subir a una base de datos)
+//Compruba si todos los datos son correctos y oculta el formulario de creacion
 document.querySelector("#registrarse").addEventListener("click", function () {
     var intput = document.getElementsByTagName("input");
     var correcto = true;
@@ -57,7 +57,7 @@ document.querySelector("#inicio").addEventListener("click", function () {
     var password = document.login.contraseniaLog.value;
     if (usuario != "" || password != "") {
         if (usuario == obtenerdatos()[0] && password == obtenerdatos()[1]) {
-            //Se abre en una ventana nueva para que se vea la funciona lidad del formulario
+            //Se abre en una ventana nueva para que se vea la funcionalidad del formulario
             window.open("Tareas.html", "nombre_de_la_ventana", "width=1000,height=1500");
         } else {
             alert("Usuario o contraseña incorrecto");
