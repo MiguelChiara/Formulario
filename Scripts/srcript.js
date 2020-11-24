@@ -46,7 +46,7 @@ document.querySelector("#registrarse").addEventListener("click", function () {
         extender();
         alert("El registro se ha efectuado con exito");
     } else {
-        alert(res+"No se ha podido completar el registro");
+        alert("No se ha podido completar el registro"+res);
     }
 });
 
