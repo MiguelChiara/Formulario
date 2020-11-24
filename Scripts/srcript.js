@@ -20,27 +20,27 @@ document.querySelector("#registrarse").addEventListener("click", function () {
     var res="";
     if (obtenerdatos()[0] == "") {
         correcto = false;
-        res=res+"Introduce el usuario\n ";
+        res=res+"Introduce el usuario\n";
     }
     if (obtenerdatos()[1] == "") {
         correcto = false;
-        res=res+"Introduce una contrase\u00F1a\n ";
+        res=res+"Introduce una contrase\u00F1a\n";
     }
     if (obtenerdatos()[2] == "") {
         correcto = false;
-        res=res+"Introduce el nombre\n ";
+        res=res+"Introduce el nombre\n";
     }
     if (obtenerdatos()[3] == "") {
         correcto = false;
-        res=res+"Introduce tu email\n ";
+        res=res+"Introduce tu email\n";
     }
     if (obtenerdatos()[4] == "") {
         correcto = false;
-        res=res+"Introduce tus apellidos\n ";
+        res=res+"Introduce tus apellidos\n";
     }
     if (obtenerdatos()[5] == "") {
         correcto = false;
-        res=res+"Introduce tu telefono\n ";
+        res=res+"Introduce tu telefono\n";
     }
     if (correcto) {
         extender();
