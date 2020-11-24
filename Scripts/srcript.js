@@ -43,12 +43,6 @@ document.querySelector("#registrarse").addEventListener("click", function () {
         res=res+"Introduce tu telefono\n ";
     }
     if (correcto) {
-        console.log(obtenerdatos()[0]);
-        console.log(obtenerdatos()[1]);
-        console.log(obtenerdatos()[2]);
-        console.log(obtenerdatos()[3]);
-        console.log(obtenerdatos()[4]);
-        console.log(obtenerdatos()[5]);
         extender();
         alert("El registro se ha efectuado con exito");
     } else {
