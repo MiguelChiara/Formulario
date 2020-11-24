@@ -30,9 +30,9 @@ document.querySelector("#registrarse").addEventListener("click", function () {
         correcto = false;
         res=res+"Introduce el nombre\n";
     }
-    if(!obtenerdatos()[3].includes("@")) {
+    if( !(/^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i.test(obtenerdatos()[3]))) {
         correcto = false;
-        res=res+"El email debe tener un @\n";
+        res=res+"El email tiene un formato incorrecto\n";
     }
     if (obtenerdatos()[3] == "") {
         correcto = false;
@@ -41,6 +41,9 @@ document.querySelector("#registrarse").addEventListener("click", function () {
     if (obtenerdatos()[4] == "") {
         correcto = false;
         res=res+"Introduce tus apellidos\n";
+    }
+    if(!(/^\d{9}$/.test(obtenerdatos()[5]))) {
+        res=res+"El numero de telefono no tiene un formato correcto\n";
     }
     if (obtenerdatos()[5] == "") {
         correcto = false;
